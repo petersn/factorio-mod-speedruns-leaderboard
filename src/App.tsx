@@ -285,7 +285,7 @@ function App(props: {}) {
     flexDirection: 'column',
     alignItems: 'center',
     //justifyContent: 'center',
-    height: '100vh',
+    //height: '100vh',
   }}>
     <h1>Factorio Mod Run</h1>
     <p style={{
