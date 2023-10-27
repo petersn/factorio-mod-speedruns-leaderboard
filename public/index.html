@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Factorio Mod Run</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+        // Workaround my nginx config that I should really change...
+        if (window.location.pathname.endsWith('1')) {
+            window.location.pathname = window.location.pathname + '/';
+        }
+    </script>
+    <script type=module src="bundle.js"></script>
+  </body>
+</html>
