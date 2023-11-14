@@ -138,6 +138,13 @@ const RUNS: Run[] = [
     link: 'https://www.twitch.tv/videos/1974556256',
     chosenItem: 'Rocket_silo.png',
   },
+  {
+    runner: 'ness056',
+    timestamp: '2023-11-13 11:08',
+    time: [1, 48,  6],
+    link: 'https://www.youtube.com/watch?v=iQBfcMriE5U',
+    chosenItem: 'Rocket_silo.png',
+  },
 ];
 
 function timestampToMoment(timestamp: string): moment.Moment {
