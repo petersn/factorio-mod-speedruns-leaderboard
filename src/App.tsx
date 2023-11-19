@@ -314,19 +314,19 @@ function App(props: {}) {
   const showCutoff = moment.tz('America/Los_Angeles');
   showCutoff.add(1, 'day');
   let first = true;
-  let everyOther = false;
+  let counter = 0;
   for (let day = COMPETITION_START_DAY.clone(); day.isBefore(showCutoff); day.add(1, 'day')) {
     const time = day.unix();
     const x = unixToX(time);
     svgContents.push(<line x1={x} y1={0} x2={x} y2={600} stroke='white' strokeWidth={1} strokeDasharray='5,5' opacity={0.5} />);
     // Put the day number at the bottom.
-    if (everyOther) {
+    if (counter % 3 === 0) {
       svgContents.push(<text x={x} y={600} fill='white' textAnchor='middle' fontSize={12} dy={15}>
         {first ? '(No rewards)' : day.format('MMM Do')}
       </text>);
     }
     first = false;
-    everyOther ^= true;
+    counter++;
   }
   // Draw a horizontal dashed line for each hour.
   for (const [hours, minutes, opacity] of [
