@@ -145,6 +145,13 @@ const RUNS: Run[] = [
     link: 'https://www.youtube.com/watch?v=iQBfcMriE5U',
     chosenItem: 'Rocket_silo.png',
   },
+  {
+    runner: 'ness056',
+    timestamp: '2023-11-16 10:25',
+    time: [1, 37,  28],
+    link: 'https://www.youtube.com/watch?v=iqJUUES7MSY',
+    chosenItem: 'Rocket_silo.png',
+  },
 ];
 
 function timestampToMoment(timestamp: string): moment.Moment {
