@@ -152,6 +152,28 @@ const RUNS: Run[] = [
     link: 'https://www.youtube.com/watch?v=iqJUUES7MSY',
     chosenItem: 'Rocket_silo.png',
   },
+  {
+    runner: 'Zaspar',
+    timestamp: '2023-11-20 09:01',
+    time: [1, 17,  0],
+    link: 'https://www.youtube.com/watch?v=5dAmTP1jAUE',
+    chosenItem: 'Rocket_silo.png',
+  },
+  {
+    runner: 'Zaspar',
+    timestamp: '2023-11-22 10:30',
+    time: [1, 15, 38],
+    link: 'https://www.youtube.com/watch?v=vC3W7lfZc_U',
+    chosenItem: 'Rocket_silo.png',
+  },
+  {
+    runner: 'Zaspar',
+    timestamp: '2023-11-29 03:26',
+    time: [1, 15, 11],
+    link: 'https://www.twitch.tv/videos/1990262672',
+    chosenItem: 'Rocket_silo.png',
+  },
+
 ];
 
 function timestampToMoment(timestamp: string): moment.Moment {
